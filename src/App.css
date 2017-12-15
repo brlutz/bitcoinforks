@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.navPadding {
+  padding-top: 100px;
+}
+
+.propertyname
+{
+  border-color: rgb(225, 225, 225);
+  border: 1px solid black;
+  border-top: none;
+}
+
+.hiddenHeader
+{
+  display: none;
+}
+
+/*Shoutout to Chris Coyier @chriscoyier.*/
+bodyTable {
+  padding: 10px;
+  background-color: #3f4258;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+section.the-css-at-table {
+  display: table;
+  border-collapse: collapse;
+  margin: 0 0 20px 0;
+}
+section.the-css-at-table header {
+  display: table-header-group !important;
+}
+section.the-css-at-table .tbody {
+  display: table-row-group;
+}
+section.the-css-at-table .tr {
+  display: table-row;
+}
+section.the-css-at-table .tr > span {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #e6e7f1;
+  text-align: left;
+}
+section.the-css-at-table .tr:nth-child(odd) {
+  background-color: #f6f7fa;
+}
+section.the-css-at-table .tr:nth-child(even) {
+  background-color: white;
+}
+section.the-css-at-table .th {
+  background: #798299;
+  border-color: #60697f;
+  color: white;
+}
+section.the-css-at-table .title {
+  display: none;
+}
+section.the-css-at-table .no-style-break {
+  display: none;
+}
+section.the-css-at-table .spacer {
+  display: none;
+}
+@media (max-width: 700px) {
+  section.the-css-at-table {
+    display: block;
+  }
+  section.the-css-at-table header {
+    display: none !important;
+  }
+  section.the-css-at-table .tbody {
+    display: block;
+  }
+  section.the-css-at-table .tr {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  section.the-css-at-table .tr > span {
+    display: block;
+  }
+  section.the-css-at-table .tr > span::before {
+    display: inline-block;
+    width: 33%;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  section.the-css-at-table .title {
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+  }
+}
+
+
