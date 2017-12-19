@@ -1,15 +1,15 @@
 import * as React from 'react';
 export interface MainTableRowProps {
   Name: string;
-  BlockNumber: number; 
+  BlockNumber?: number; 
   BlockDate: string;
   Claimable: string;
   Markets: string;
   MarketLink: string;
   MainNet: string;
   Website: string;
-  Social: string;
-  HasCheckMark: boolean;
+  Social?: string;
+  HasCheckMark?: boolean;
 }
 
 class MainTableRow extends React.Component < MainTableRowProps, {}> {
@@ -30,7 +30,7 @@ class MainTableRow extends React.Component < MainTableRowProps, {}> {
 </span><br className="no-style-break"/><br className="no-style-break"/>
 <span>
   <span className="title">Markets: <br className="no-style-break"/></span>
-  <a href={this.props.MarketLink}>{this.props.Markets}</a>
+  {this.getOptionalLink(this.props.Markets, this.props.MarketLink)}
 </span><br className="no-style-break"/><br className="no-style-break"/>
 <span>
   <span className="title">MainNet: <br className="no-style-break"/></span>
@@ -41,6 +41,13 @@ class MainTableRow extends React.Component < MainTableRowProps, {}> {
   Coming Soon!
 </span><br className="no-style-break"/><br className="no-style-break"/>
 </p>);
+  }
+
+  getOptionalLink(text: string, link: string) {
+    return (
+      link !== '' ? 
+      <a href={this.props.MarketLink}>{this.props.Markets}</a> : <span>{this.props.Markets}</span>
+    );
   }
 }
 

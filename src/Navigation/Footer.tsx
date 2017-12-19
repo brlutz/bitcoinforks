@@ -11,7 +11,7 @@ class Footer extends React.Component {
             <div className="footer-column">
                 <h3>About us</h3>
                 <p className="margin-btm20">
-                    We are two guys that wanted to present some Bitcoin related information in a better way. 
+                    We are two guys that wanted to present some Bitcoin related information in a better way. <br/> Last Updated 12/18/2017.
                 </p>
 
             </div>
