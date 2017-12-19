@@ -22,7 +22,7 @@ class MainTableRow extends React.Component < MainTableRowProps, {}> {
 </span><br className="no-style-break"/><br className="no-style-break"/>
 <span>
   <span className="title">Block Number/Date: <br className="no-style-break"/></span>
-  {this.props.BlockNumber} / {this.props.BlockDate}
+  {this.props.BlockNumber} {this.props.BlockDate !== '' && this.props.BlockNumber !== undefined && '/'} {this.props.BlockDate}
 </span><br className="no-style-break"/><br className="no-style-break"/>
 <span>
   <span className="title">Claimable: <br className="no-style-break"/></span>
