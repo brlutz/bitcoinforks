@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Navigation/Header';
 import Footer from './Navigation/Footer';
 import MainTable from './Components/MainTable';
+import FreeSpace from './Components/FreeSpace';
 // const logo = require('./logo.svg');
 
 class App extends React.Component {
@@ -11,6 +12,7 @@ class App extends React.Component {
       <div>
         <Header/>
         <MainTable/>
+        <FreeSpace/>
         <Footer/>
         </div>
     );

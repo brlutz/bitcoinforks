@@ -10,10 +10,11 @@ class MainTable extends React.Component {
   <p className="tr">
     <span className="th">Name</span>
     <span className="th">Block Number / Date</span>
-    <span className="th">Claimable</span>
+    {/*<span className="th">Claimable</span>*/}
     <span className="th">Markets</span>
-    <span className="th">Mainnet</span>
-    <span className="th">Social</span>
+    <span className="th">Offical Website</span>
+    <span className="th">Ledger / Trezor Support</span>
+    <span className="th">Twitter</span>
   </p>
 </header>
 <div className="tbody">
@@ -26,8 +27,9 @@ class MainTable extends React.Component {
       MarketLink="https://coinmarketcap.com/currencies/bitcoin-cash/#markets"
       MainNet="Yes"
       Website="www.bitcoincash.org"
-      Social=""
       HasCheckMark={true}
+      TwitterName="bitcoingold"
+      WalletSupport="Yes"
   />
   <MainTableRow 
       Name="Bitcoin Gold (BTG)"
@@ -38,8 +40,8 @@ class MainTable extends React.Component {
       MarketLink="https://coinmarketcap.com/currencies/bitcoin-gold/#markets"
       MainNet="Yes"
       Website="www.bitcoingold.org"
-      Social=""
       HasCheckMark={true}
+      WalletSupport="Yes"
   />
   <MainTableRow 
       Name="Bitcore (BTX)"
@@ -50,7 +52,6 @@ class MainTable extends React.Component {
       MarketLink="https://coinmarketcap.com/currencies/bitcore/#markets"
       MainNet="Yes"
       Website="https://bitcore.cc/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -62,7 +63,6 @@ class MainTable extends React.Component {
       MarketLink="https://coinmarketcap.com/currencies/bitcoin-diamond/#markets"
       MainNet="Late December"
       Website="http://www.btcd.io/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -74,7 +74,7 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="Dec 25th"
       Website="https://bitcointalk.org/index.php?topic=2559630.0"
-      Social=""
+      WebsiteAltText="Bitcointalk.org ANN"
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -86,7 +86,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="www.bithot.org"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -98,7 +97,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet=""
       Website="http://www.ub.com/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -110,7 +108,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="http://supersmartbitcoin.com/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -122,7 +119,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="https://www.bcx.org/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -134,7 +130,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="https://www.bitcoingod.org/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -145,7 +140,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="https://bitcoinatom.io/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -156,7 +150,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="https://bitcointalk.org/index.php?topic=2316506.0"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -168,7 +161,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="http://www.bitcoincashplus.org/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -180,7 +172,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="http://www.p.top/en/index.html"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -192,7 +183,17 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="http://bcs.info/"
-      Social=""
+      HasCheckMark={false}
+  />
+  <MainTableRow 
+      Name="Bitcoin Private"
+      BlockDate="Jan / Feb"
+      Claimable="No"
+      Markets="No"
+      MarketLink=""
+      MainNet="No"
+      WebsiteAltText="Reddit"
+      Website="https://www.reddit.com/r/ZClassic/comments/7l1ryp/bitcoin_private_btcp_wiki/"
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -203,7 +204,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet="No"
       Website="https://www.bitcoinrh.org/"
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -214,7 +214,6 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet=""
       Website=""
-      Social=""
       HasCheckMark={false}
   />
   <MainTableRow 
@@ -225,11 +224,8 @@ class MainTable extends React.Component {
       MarketLink=""
       MainNet=""
       Website=""
-      Social=""
       HasCheckMark={false}
   />
-  
-  
   <p className="spacer">&nbsp;</p>
 </div>
 </section>

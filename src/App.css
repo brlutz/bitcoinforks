@@ -1,6 +1,14 @@
+th {
+  color: rgb(255, 255, 255);
+  background-color: rgb(195, 81, 47);
+  border-color: rgb(179, 74, 42);
+}
+
+
 .App {
   text-align: center;
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -39,6 +47,10 @@
   display: none;
 }
 
+a {
+  color: #C3512F;
+}
+
 /*Shoutout to Chris Coyier @chriscoyier.*/
 bodyTable {
   padding: 10px;
@@ -72,9 +84,9 @@ section.the-css-at-table .tr:nth-child(even) {
   background-color: white;
 }
 section.the-css-at-table .th {
-  background: #798299;
-  border-color: #60697f;
-  color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(195, 81, 47);
+  border-color: rgb(179, 74, 42);
 }
 section.the-css-at-table .title {
   display: none;
